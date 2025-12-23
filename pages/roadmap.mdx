@@ -1,0 +1,353 @@
+import { RoadmapGantt } from '@/components/interactive/RoadmapGantt'
+
+# Roadmap de Implementação
+
+## Timeline de 8 Semanas
+
+Planejamento estratégico para implementação das oportunidades priorizadas, com foco em gerar valor incremental a cada sprint.
+
+---
+
+## Visão Geral
+
+<div className="grid grid-cols-1 md:grid-cols-4 gap-4 my-8">
+  <div className="p-6 rounded-lg bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-950 dark:to-emerald-950 border-2 border-green-500">
+    ### Semanas 1-2
+    **Quick Wins**
+
+    9 oportunidades P0
+    - Landing Page: 5 itens
+    - Gestão Pagamento: 4 itens
+  </div>
+
+  <div className="p-6 rounded-lg bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-950 dark:to-cyan-950 border-2 border-blue-500">
+    ### Semanas 3-5
+    **Viabilidade**
+
+    8 oportunidades P1
+    - Transformações estruturais
+    - Integrações complexas
+  </div>
+
+  <div className="p-6 rounded-lg bg-gradient-to-br from-purple-50 to-violet-50 dark:from-purple-950 dark:to-violet-950 border-2 border-purple-500">
+    ### Semanas 6-7
+    **Validação**
+
+    - Testes A/B
+    - Ajustes baseados em dados
+    - Otimizações
+  </div>
+
+  <div className="p-6 rounded-lg bg-gradient-to-br from-orange-50 to-amber-50 dark:from-orange-950 dark:to-amber-950 border-2 border-orange-500">
+    ### Semana 8
+    **Deploy**
+
+    - Rollout gradual
+    - Monitoramento
+    - Documentação
+  </div>
+</div>
+
+---
+
+## Gantt Interativo
+
+<RoadmapGantt />
+
+---
+
+## Fase 1: Quick Wins (Semanas 1-2)
+
+### Objetivo
+Gerar resultados rápidos e construir momentum para o projeto.
+
+### Landing Page
+
+<div className="space-y-3 my-6">
+  <div className="p-4 rounded-lg border-l-4 border-green-500 bg-green-50 dark:bg-green-950">
+    **[P0-LP-01]** Comparação lado-a-lado com concorrentes
+    - **Timeline**: 3 dias
+    - **Responsável**: Design + Dev Frontend
+    - **Dependências**: Nenhuma
+  </div>
+
+  <div className="p-4 rounded-lg border-l-4 border-green-500 bg-green-50 dark:bg-green-950">
+    **[P0-LP-02]** Calculadora de economia personalizada
+    - **Timeline**: 4 dias
+    - **Responsável**: Dev Frontend + Product
+    - **Dependências**: P0-LP-01
+  </div>
+
+  <div className="p-4 rounded-lg border-l-4 border-green-500 bg-green-50 dark:bg-green-950">
+    **[P0-LP-03]** Seção de FAQ expandida
+    - **Timeline**: 2 dias
+    - **Responsável**: Content + Dev Frontend
+    - **Dependências**: Nenhuma
+  </div>
+
+  <div className="p-4 rounded-lg border-l-4 border-green-500 bg-green-50 dark:bg-green-950">
+    **[P0-LP-04]** Prova social com testemunhos
+    - **Timeline**: 3 dias
+    - **Responsável**: Content + Design
+    - **Dependências**: Nenhuma
+  </div>
+
+  <div className="p-4 rounded-lg border-l-4 border-green-500 bg-green-50 dark:bg-green-950">
+    **[P0-LP-05]** CTA otimizado com urgência
+    - **Timeline**: 2 dias
+    - **Responsável**: Design + Dev Frontend
+    - **Dependências**: Nenhuma
+  </div>
+</div>
+
+### Gestão de Pagamento
+
+<div className="space-y-3 my-6">
+  <div className="p-4 rounded-lg border-l-4 border-green-500 bg-green-50 dark:bg-green-950">
+    **[P0-GP-01]** Notificações proativas antes da cobrança
+    - **Timeline**: 5 dias
+    - **Responsável**: Dev Backend + Frontend
+    - **Dependências**: Nenhuma
+  </div>
+
+  <div className="p-4 rounded-lg border-l-4 border-green-500 bg-green-50 dark:bg-green-950">
+    **[P0-GP-02]** Transparência total no painel
+    - **Timeline**: 4 dias
+    - **Responsável**: Design + Dev Frontend
+    - **Dependências**: Nenhuma
+  </div>
+
+  <div className="p-4 rounded-lg border-l-4 border-green-500 bg-green-50 dark:bg-green-950">
+    **[P0-GP-03]** Histórico de cobranças detalhado
+    - **Timeline**: 3 dias
+    - **Responsável**: Dev Backend + Frontend
+    - **Dependências**: P0-GP-02
+  </div>
+
+  <div className="p-4 rounded-lg border-l-4 border-green-500 bg-green-50 dark:bg-green-950">
+    **[P0-GP-04]** Processo de cancelamento simplificado
+    - **Timeline**: 3 dias
+    - **Responsável**: Design + Dev Frontend
+    - **Dependências**: Nenhuma
+  </div>
+</div>
+
+**Entregáveis Semana 1-2:**
+- 9 melhorias implementadas
+- Dashboard de métricas configurado
+- Primeira leva de testes A/B iniciada
+
+---
+
+## Fase 2: Viabilidade (Semanas 3-5)
+
+### Objetivo
+Implementar transformações estruturais de alto impacto.
+
+### Oportunidades P1
+
+<div className="space-y-3 my-6">
+  <div className="p-4 rounded-lg border-l-4 border-blue-500 bg-blue-50 dark:bg-blue-950">
+    **[P1-01]** Sistema de onboarding progressivo
+    - **Timeline**: 1 semana
+    - **Responsável**: Design + Dev Frontend + Product
+  </div>
+
+  <div className="p-4 rounded-lg border-l-4 border-blue-500 bg-blue-50 dark:bg-blue-950">
+    **[P1-02]** Personalização baseada em comportamento
+    - **Timeline**: 1.5 semanas
+    - **Responsável**: Dev Backend + Data Science
+  </div>
+
+  <div className="p-4 rounded-lg border-l-4 border-blue-500 bg-blue-50 dark:bg-blue-950">
+    **[P1-03]** Dashboard de economia em tempo real
+    - **Timeline**: 1 semana
+    - **Responsável**: Design + Dev Frontend + Backend
+  </div>
+
+  <div className="p-4 rounded-lg border-l-4 border-blue-500 bg-blue-50 dark:bg-blue-950">
+    **[P1-04]** Programa de recompensas gamificado
+    - **Timeline**: 2 semanas
+    - **Responsável**: Product + Design + Dev Full Stack
+  </div>
+</div>
+
+**Entregáveis Semana 3-5:**
+- 8 transformações estruturais concluídas
+- Integrações com sistemas existentes
+- Documentação técnica atualizada
+
+---
+
+## Fase 3: Validação (Semanas 6-7)
+
+### Objetivo
+Validar hipóteses e otimizar baseado em dados reais.
+
+### Atividades
+
+<div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+  <div className="p-6 rounded-lg border-2 border-purple-200 dark:border-purple-800 bg-purple-50 dark:bg-purple-950">
+    #### Testes A/B
+
+    - Variações de copywriting
+    - Posicionamento de CTAs
+    - Layout de comparação de preços
+    - Fluxo de cancelamento
+  </div>
+
+  <div className="p-6 rounded-lg border-2 border-purple-200 dark:border-purple-800 bg-purple-50 dark:bg-purple-950">
+    #### Análise de Dados
+
+    - Taxa de conversão por variante
+    - Heat maps e scroll depth
+    - User session recordings
+    - Feedback qualitativo
+  </div>
+
+  <div className="p-6 rounded-lg border-2 border-purple-200 dark:border-purple-800 bg-purple-50 dark:bg-purple-950">
+    #### Ajustes
+
+    - Refinamento de UX
+    - Otimização de performance
+    - Correção de bugs
+    - Melhorias de acessibilidade
+  </div>
+
+  <div className="p-6 rounded-lg border-2 border-purple-200 dark:border-purple-800 bg-purple-50 dark:bg-purple-950">
+    #### Documentação
+
+    - Playbooks de uso
+    - Guidelines de conteúdo
+    - Métricas de baseline
+    - Learnings consolidados
+  </div>
+</div>
+
+---
+
+## Fase 4: Deploy (Semana 8)
+
+### Objetivo
+Rollout gradual com monitoramento rigoroso.
+
+### Estratégia de Rollout
+
+```mermaid
+gantt
+    title Rollout Gradual
+    dateFormat  YYYY-MM-DD
+    section Beta
+    5% dos usuários     :a1, 2024-01-01, 2d
+    section Staged
+    25% dos usuários    :a2, after a1, 2d
+    50% dos usuários    :a3, after a2, 2d
+    section Full
+    100% dos usuários   :a4, after a3, 1d
+```
+
+### Checklist de Deploy
+
+<div className="space-y-2 my-6">
+  <div className="flex items-center gap-2">
+    <input type="checkbox" className="w-4 h-4" />
+    <span>Testes de regressão completados</span>
+  </div>
+  <div className="flex items-center gap-2">
+    <input type="checkbox" className="w-4 h-4" />
+    <span>Performance benchmarks validados</span>
+  </div>
+  <div className="flex items-center gap-2">
+    <input type="checkbox" className="w-4 h-4" />
+    <span>Acessibilidade auditada (WCAG AA)</span>
+  </div>
+  <div className="flex items-center gap-2">
+    <input type="checkbox" className="w-4 h-4" />
+    <span>Documentação atualizada</span>
+  </div>
+  <div className="flex items-center gap-2">
+    <input type="checkbox" className="w-4 h-4" />
+    <span>Playbooks de suporte criados</span>
+  </div>
+  <div className="flex items-center gap-2">
+    <input type="checkbox" className="w-4 h-4" />
+    <span>Dashboards de monitoramento configurados</span>
+  </div>
+  <div className="flex items-center gap-2">
+    <input type="checkbox" className="w-4 h-4" />
+    <span>Plano de rollback preparado</span>
+  </div>
+  <div className="flex items-center gap-2">
+    <input type="checkbox" className="w-4 h-4" />
+    <span>Stakeholders comunicados</span>
+  </div>
+</div>
+
+---
+
+## Métricas de Sucesso
+
+### KPIs por Fase
+
+| Fase | Métrica | Baseline | Meta | Prazo |
+|------|---------|----------|------|-------|
+| Fase 1 | Taxa de Conversão LP | 2.5% | 4.0% | Semana 3 |
+| Fase 1 | NPS Gestão Pagamento | 45 | 65 | Semana 3 |
+| Fase 2 | Taxa de Ativação | 60% | 80% | Semana 6 |
+| Fase 2 | Economia Percebida | R$ 150 | R$ 250 | Semana 6 |
+| Fase 3 | Taxa de Retenção | 75% | 85% | Semana 8 |
+| Fase 3 | Redução de Churn | Baseline | -40% | Semana 8 |
+
+---
+
+## Dependências e Riscos
+
+### Dependências Críticas
+
+<div className="space-y-3 my-6">
+  <div className="p-4 rounded-lg border-l-4 border-yellow-500 bg-yellow-50 dark:bg-yellow-950">
+    ⚠️ **Integração com Sistema de Pagamentos**
+    - Necessário para P0-GP-01 e P0-GP-02
+    - Coordenar com time de Backend
+  </div>
+
+  <div className="p-4 rounded-lg border-l-4 border-yellow-500 bg-yellow-50 dark:bg-yellow-950">
+    ⚠️ **Dados de Comportamento do Usuário**
+    - Necessário para P1-02
+    - Coordenar com time de Data Science
+  </div>
+
+  <div className="p-4 rounded-lg border-l-4 border-yellow-500 bg-yellow-50 dark:bg-yellow-950">
+    ⚠️ **Sistema de Notificações**
+    - Necessário para P0-GP-01
+    - Verificar capacidade de infraestrutura
+  </div>
+</div>
+
+### Riscos e Mitigações
+
+| Risco | Probabilidade | Impacto | Mitigação |
+|-------|---------------|---------|-----------|
+| Atraso em integrações | Médio | Alto | Iniciar conversas técnicas na Semana 0 |
+| Baixa adoção de features | Baixo | Médio | Testes A/B rigorosos na Fase 3 |
+| Performance issues | Baixo | Alto | Load testing antes de cada deploy |
+| Feedback negativo | Baixo | Médio | Rollout gradual com monitoramento |
+
+---
+
+<div className="mt-12 p-6 rounded-xl bg-gradient-to-r from-primary-100 to-accent-100 dark:from-primary-900 dark:to-accent-900">
+  ### 🎯 Próximos Passos Imediatos
+
+  1. **Semana 0 (Preparação)**:
+     - Alinhar com stakeholders
+     - Configurar ambiente de desenvolvimento
+     - Preparar dashboards de métricas
+     - Iniciar conversas técnicas sobre integrações
+
+  2. **Kick-off Semana 1**:
+     - Daily standups às 10h
+     - Review de progresso toda sexta 16h
+     - Sprint planning toda segunda 9h
+
+  [Voltar para Executive Summary →](/)
+</div>

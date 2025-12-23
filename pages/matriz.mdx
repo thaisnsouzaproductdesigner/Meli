@@ -1,0 +1,100 @@
+import { PrioritizationMatrix } from '@/components/interactive/PrioritizationMatrix'
+
+# Matriz de Priorização Interativa
+
+## Metodologia: Impacto × Esforço
+
+Esta matriz utiliza o framework de priorização por **Impacto × Esforço** para categorizar as 31 oportunidades identificadas em 4 níveis de prioridade:
+
+<div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+  <div className="p-6 rounded-lg bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-950 dark:to-emerald-950 border-2 border-green-500">
+    ### 🎯 P0 - Quick Wins
+
+    **Alto Impacto + Baixo Esforço**
+
+    - 9 oportunidades identificadas
+    - Implementação: 2-4 semanas
+    - ROI esperado: 300-500%
+    - **Foco imediato da sprint**
+  </div>
+
+  <div className="p-6 rounded-lg bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-950 dark:to-cyan-950 border-2 border-blue-500">
+    ### 🚀 P1 - Viabilidade
+
+    **Alto Impacto + Alto Esforço**
+
+    - 8 oportunidades identificadas
+    - Implementação: 4-8 semanas
+    - ROI esperado: 200-400%
+    - **Planejamento estratégico**
+  </div>
+
+  <div className="p-6 rounded-lg bg-gradient-to-br from-yellow-50 to-amber-50 dark:from-yellow-950 dark:to-amber-950 border-2 border-yellow-500">
+    ### ⚡ P2 - Melhoria Contínua
+
+    **Baixo Impacto + Baixo Esforço**
+
+    - 7 oportunidades identificadas
+    - Implementação: 1-2 semanas
+    - ROI esperado: 50-150%
+    - **Ganhos incrementais**
+  </div>
+
+  <div className="p-6 rounded-lg bg-gradient-to-br from-gray-50 to-slate-50 dark:from-gray-950 dark:to-slate-950 border-2 border-gray-500">
+    ### 🎲 P3 - Reavaliação
+
+    **Baixo Impacto + Alto Esforço**
+
+    - 7 oportunidades identificadas
+    - Implementação: 4+ semanas
+    - ROI esperado: 20-100%
+    - **Baixa prioridade**
+  </div>
+</div>
+
+---
+
+## Matriz Interativa
+
+Explore as 31 oportunidades na matriz abaixo. Clique em cada card para ver detalhes completos.
+
+<PrioritizationMatrix />
+
+---
+
+## Como Usar a Matriz
+
+1. **Filtrar por Categoria**: Use os filtros para ver apenas oportunidades de Landing Page ou Gestão de Pagamento
+2. **Ordenar por Prioridade**: As oportunidades já estão organizadas por impacto
+3. **Explorar Detalhes**: Clique em qualquer card para ver o racional estratégico completo
+4. **Navegar para Detalhes**: Use o botão "Ver detalhes" para acessar a página completa da oportunidade
+
+---
+
+## Critérios de Avaliação
+
+### Impacto (Alto/Médio/Baixo)
+
+Avaliado com base em:
+- Potencial de aumento de conversão
+- Redução de churn esperada
+- Melhoria na satisfação do usuário (NPS)
+- Valor percebido pelo cliente
+
+### Esforço (Alto/Médio/Baixo)
+
+Avaliado com base em:
+- Complexidade técnica
+- Tempo de desenvolvimento
+- Dependências de sistemas
+- Necessidade de testes/validação
+
+---
+
+<div className="mt-12 p-6 rounded-xl bg-gradient-to-r from-primary-100 to-accent-100 dark:from-primary-900 dark:to-accent-900">
+  ### 💡 Recomendação
+
+  Comece pelos **9 Quick Wins (P0)** para gerar resultados rápidos e construir momentum. Em paralelo, planeje a execução das **8 oportunidades de Viabilidade (P1)** para transformações de médio prazo.
+
+  [Ver Roadmap de Implementação →](/roadmap)
+</div>
