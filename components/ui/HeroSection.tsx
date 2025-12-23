@@ -14,12 +14,12 @@ export function HeroSection({ title, subtitle, description }: HeroSectionProps) 
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="mb-12 text-center"
+      className="mb-12"
     >
       <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent">
         {title}
       </h1>
-      <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+      <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl">
         {description}
       </p>
     </motion.div>
