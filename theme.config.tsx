@@ -12,24 +12,24 @@ const config = {
       >
         <path
           d="M12 2L2 7L12 12L22 7L12 2Z"
-          className="fill-primary-600 dark:fill-primary-400"
+          className="fill-foreground"
         />
         <path
           d="M2 17L12 22L22 17"
-          className="stroke-primary-600 dark:stroke-primary-400"
+          className="stroke-foreground"
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M2 12L12 17L22 12"
-          className="stroke-primary-600 dark:stroke-primary-400"
+          className="stroke-foreground"
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
       </svg>
-      <span className="font-bold text-xl bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent">
+      <span className="font-bold text-xl text-foreground">
         Meli+ Design System
       </span>
     </div>
@@ -60,12 +60,10 @@ const config = {
       <link rel="icon" href="/favicon.ico" />
     </>
   ),
-  primaryHue: 210,
-  primarySaturation: 83,
   sidebar: {
     titleComponent({ title, type }: { title: string; type: string }) {
       if (type === 'separator') {
-        return <div className="text-xs font-bold uppercase text-gray-500 dark:text-gray-400 mt-6 mb-2">{title}</div>
+        return <div className="text-xs font-bold uppercase text-muted-foreground mt-6 mb-2">{title}</div>
       }
       return <>{title}</>
     },
@@ -88,7 +86,7 @@ const config = {
         <div>
           <span className="font-semibold">Meli+ Product Design Documentation</span>
         </div>
-        <p className="mt-2 text-xs text-gray-500 dark:text-gray-400">
+        <p className="mt-2 text-xs text-muted-foreground">
           © {new Date().getFullYear()} · Redesign de Landing Page e Gestão de Pagamento
         </p>
       </div>
