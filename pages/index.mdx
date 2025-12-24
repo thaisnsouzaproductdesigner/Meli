@@ -2,6 +2,7 @@ import { HeroSection } from '@/components/ui/HeroSection'
 import { StatsGrid } from '@/components/ui/StatsGrid'
 import { RecommendationCard } from '@/components/ui/RecommendationCard'
 import { CTASection } from '@/components/ui/CTASection'
+import { Card, CardContent } from '@/components/ui/card'
 
 # Executive Summary
 
@@ -18,40 +19,34 @@ import { CTASection } from '@/components/ui/CTASection'
     {
       label: "Oportunidades Identificadas",
       value: "31",
-      icon: "target",
-      color: "primary"
+      icon: "target"
     },
     {
       label: "Quick Wins (P0)",
       value: "9",
       icon: "zap",
-      color: "accent",
       description: "Alto impacto, baixo esforço"
     },
     {
       label: "Potencial de Conversão",
       value: "+50-80%",
-      icon: "trending-up",
-      color: "green"
+      icon: "trending-up"
     },
     {
       label: "Redução de Churn",
       value: "-40-60%",
-      icon: "users",
-      color: "blue"
+      icon: "users"
     },
     {
       label: "Timeline P0",
       value: "2-4 sem",
       icon: "clock",
-      color: "purple",
       description: "Implementação dos Quick Wins"
     },
     {
       label: "ROI Esperado",
       value: "300%+",
-      icon: "dollar-sign",
-      color: "emerald"
+      icon: "dollar-sign"
     }
   ]}
 />
@@ -76,38 +71,50 @@ import { CTASection } from '@/components/ui/CTASection'
 
 ## Principais Insights da Pesquisa
 
-<div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
-  <div className="p-6 rounded-lg border-2 border-primary-200 dark:border-primary-800 bg-primary-50 dark:bg-primary-950">
-    ### 🎯 Landing Page
+<div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
+  <Card>
+    <CardContent className="pt-6">
+      <h3 className="text-lg font-semibold mb-3 text-foreground">🎯 Landing Page</h3>
+      <ul className="space-y-2 text-sm text-muted-foreground">
+        <li><strong className="text-foreground">Problema:</strong> Falta de comparação clara com concorrentes</li>
+        <li><strong className="text-foreground">Impacto:</strong> Usuários não entendem a proposta de valor</li>
+        <li><strong className="text-foreground">Solução:</strong> Tabela comparativa + calculadora de economia</li>
+      </ul>
+    </CardContent>
+  </Card>
 
-    - **Problema**: Falta de comparação clara com concorrentes
-    - **Impacto**: Usuários não entendem a proposta de valor
-    - **Solução**: Tabela comparativa + calculadora de economia
-  </div>
+  <Card>
+    <CardContent className="pt-6">
+      <h3 className="text-lg font-semibold mb-3 text-foreground">💳 Gestão de Pagamento</h3>
+      <ul className="space-y-2 text-sm text-muted-foreground">
+        <li><strong className="text-foreground">Problema:</strong> 68% das reclamações são sobre cobranças inesperadas</li>
+        <li><strong className="text-foreground">Impacto:</strong> Alto índice de churn e insatisfação</li>
+        <li><strong className="text-foreground">Solução:</strong> Transparência total + notificações proativas</li>
+      </ul>
+    </CardContent>
+  </Card>
 
-  <div className="p-6 rounded-lg border-2 border-accent-200 dark:border-accent-800 bg-accent-50 dark:bg-accent-950">
-    ### 💳 Gestão de Pagamento
+  <Card>
+    <CardContent className="pt-6">
+      <h3 className="text-lg font-semibold mb-3 text-foreground">📊 Análise Competitiva</h3>
+      <ul className="space-y-2 text-sm text-muted-foreground">
+        <li>Amazon Prime lidera em transparência</li>
+        <li>Rappi/iFood destacam-se em comunicação</li>
+        <li>Oportunidade de diferenciação em personalização</li>
+      </ul>
+    </CardContent>
+  </Card>
 
-    - **Problema**: 68% das reclamações são sobre cobranças inesperadas
-    - **Impacto**: Alto índice de churn e insatisfação
-    - **Solução**: Transparência total + notificações proativas
-  </div>
-
-  <div className="p-6 rounded-lg border-2 border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-950">
-    ### 📊 Análise Competitiva
-
-    - Amazon Prime lidera em transparência
-    - Rappi/iFood destacam-se em comunicação
-    - Oportunidade de diferenciação em personalização
-  </div>
-
-  <div className="p-6 rounded-lg border-2 border-blue-200 dark:border-blue-800 bg-blue-50 dark:bg-blue-950">
-    ### 💡 Oportunidades
-
-    - 31 melhorias catalogadas
-    - 9 Quick Wins priorizados
-    - Framework de priorização por Impacto × Esforço
-  </div>
+  <Card>
+    <CardContent className="pt-6">
+      <h3 className="text-lg font-semibold mb-3 text-foreground">💡 Oportunidades</h3>
+      <ul className="space-y-2 text-sm text-muted-foreground">
+        <li>31 melhorias catalogadas</li>
+        <li>9 Quick Wins priorizados</li>
+        <li>Framework de priorização por Impacto × Esforço</li>
+      </ul>
+    </CardContent>
+  </Card>
 </div>
 
 ## Estrutura da Documentação
