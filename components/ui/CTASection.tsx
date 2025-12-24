@@ -6,6 +6,7 @@ import {
   Search, Grid, Target, Palette, Play, Calendar,
   type LucideIcon
 } from 'lucide-react'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 
 const iconMap: Record<string, LucideIcon> = {
   search: Search,
@@ -29,7 +30,7 @@ interface CTASectionProps {
 
 export function CTASection({ sections }: CTASectionProps) {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-12">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-8">
       {sections.map((section, index) => {
         const Icon = iconMap[section.icon] || Target
 
@@ -40,21 +41,22 @@ export function CTASection({ sections }: CTASectionProps) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3, delay: index * 0.1 }}
           >
-            <Link
-              href={section.link}
-              className="block p-6 rounded-xl border-2 border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 hover:border-primary-500 hover:shadow-lg transition-all group"
-            >
-              <div className="flex items-center gap-3 mb-4">
-                <div className="p-3 rounded-lg bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-400 group-hover:bg-primary-600 group-hover:text-white transition-colors">
-                  <Icon className="w-5 h-5" />
-                </div>
-                <h3 className="text-lg font-bold text-gray-900 dark:text-gray-100">
-                  {section.title}
-                </h3>
-              </div>
-              <p className="text-gray-600 dark:text-gray-400 text-sm">
-                {section.description}
-              </p>
+            <Link href={section.link} className="block group">
+              <Card className="hover:border-primary/50 transition-all">
+                <CardHeader>
+                  <div className="flex items-center gap-3">
+                    <div className="p-2 rounded-md bg-muted group-hover:bg-primary/10 transition-colors">
+                      <Icon className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
+                    </div>
+                    <CardTitle className="text-base">{section.title}</CardTitle>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-sm">
+                    {section.description}
+                  </CardDescription>
+                </CardContent>
+              </Card>
             </Link>
           </motion.div>
         )
