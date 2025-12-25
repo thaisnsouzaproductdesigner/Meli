@@ -2,28 +2,44 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge'
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
 
+{/*
+  MAPA DE IDs DESTA PÁGINA:
+  - alert-index-01: Recomendação estratégica
+  - sec-index-01: Números-chave do projeto
+  - card-index-01: Card "31 Oportunidades"
+  - card-index-02: Card "9 Quick Wins"
+  - card-index-03: Card "+50-80% Conversão"
+  - card-index-04: Card "2-4 sem Timeline"
+  - sec-index-02: Sobre o Projeto
+  - sec-index-03: Principais Insights
+  - card-index-05: Card Landing Page
+  - card-index-06: Card Gestão de Pagamento
+  - sec-index-04: Tecnologias
+  - sec-index-05: Navegação
+*/}
+
 # Meli+ Product Design Documentation
 
 Documentação completa do redesign de Landing Page e Gestão de Pagamento do programa de assinatura Meli+ do Mercado Livre.
 
-<Alert className="my-6">
+<Alert id="alert-index-01" className="my-6">
   <AlertTitle>🎯 Recomendação Estratégica</AlertTitle>
   <AlertDescription>
     Implementar 9 Quick Wins (P0) nas próximas 2-4 semanas para alcançar +50-80% conversão e -40-60% churn com mínimo esforço.
   </AlertDescription>
 </Alert>
 
-## 📊 Números-Chave do Projeto
+## 📊 Números-Chave do Projeto {#sec-index-01}
 
-<div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 my-6">
-  <Card>
+<div id="section-index-01" className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 my-6">
+  <Card id="card-index-01">
     <CardHeader>
       <CardTitle className="text-2xl">31</CardTitle>
       <CardDescription>Oportunidades Identificadas</CardDescription>
     </CardHeader>
   </Card>
 
-  <Card>
+  <Card id="card-index-02">
     <CardHeader>
       <CardTitle className="text-2xl">9</CardTitle>
       <CardDescription>Quick Wins (P0)</CardDescription>
@@ -34,14 +50,14 @@ Documentação completa do redesign de Landing Page e Gestão de Pagamento do pr
     </CardContent>
   </Card>
 
-  <Card>
+  <Card id="card-index-03">
     <CardHeader>
       <CardTitle className="text-2xl">+50-80%</CardTitle>
       <CardDescription>Potencial de Conversão</CardDescription>
     </CardHeader>
   </Card>
 
-  <Card>
+  <Card id="card-index-04">
     <CardHeader>
       <CardTitle className="text-2xl">2-4 sem</CardTitle>
       <CardDescription>Timeline P0</CardDescription>
@@ -49,7 +65,7 @@ Documentação completa do redesign de Landing Page e Gestão de Pagamento do pr
   </Card>
 </div>
 
-## 🎯 Sobre o Projeto
+## 🎯 Sobre o Projeto {#sec-index-02}
 
 Este projeto consolida:
 
@@ -59,10 +75,10 @@ Este projeto consolida:
 - **UI Kit:** Sistema de design com shadcn/ui (tema neutro)
 - **Roadmap:** Timeline de implementação
 
-## 🚀 Principais Insights
+## 🚀 Principais Insights {#sec-index-03}
 
-<div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-  <Card>
+<div id="section-index-02" className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+  <Card id="card-index-05">
     <CardContent className="pt-6">
       <h3 className="text-lg font-semibold mb-3">🎯 Landing Page</h3>
       <ul className="space-y-2 text-sm text-muted-foreground">
@@ -73,7 +89,7 @@ Este projeto consolida:
     </CardContent>
   </Card>
 
-  <Card>
+  <Card id="card-index-06">
     <CardContent className="pt-6">
       <h3 className="text-lg font-semibold mb-3">💳 Gestão de Pagamento</h3>
       <ul className="space-y-2 text-sm text-muted-foreground">
@@ -85,7 +101,7 @@ Este projeto consolida:
   </Card>
 </div>
 
-## 🛠️ Tecnologias
+## 🛠️ Tecnologias {#sec-index-04}
 
 - **Nextra** - Framework de documentação Next.js
 - **shadcn/ui** - Componentes acessíveis e neutros
@@ -94,7 +110,7 @@ Este projeto consolida:
 - **Recharts** - Visualização de dados
 - **Lucide Icons** - Ícones modernos
 
-## 📚 Navegação
+## 📚 Navegação {#sec-index-05}
 
 Use o menu lateral para explorar:
 
