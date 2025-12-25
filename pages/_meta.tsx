@@ -5,5 +5,6 @@ export default {
   opportunities: 'Oportunidades Detalhadas',
   'ui-kit': 'UI Kit',
   animations: 'Transições & Animações',
-  roadmap: 'Roadmap de Implementação'
+  roadmap: 'Roadmap de Implementação',
+  'test-components': '🧪 Teste de Componentes'
 }

@@ -35,9 +35,9 @@ const config = {
     </div>
   ),
   project: {
-    link: 'https://github.com',
+    link: 'https://github.com/thaisnsouzaproductdesigner/Meli',
   },
-  docsRepositoryBase: 'https://github.com',
+  docsRepositoryBase: 'https://github.com/thaisnsouzaproductdesigner/Meli/tree/main',
   useNextSeoProps() {
     const { asPath } = useRouter()
     if (asPath !== '/') {

@@ -1,0 +1,301 @@
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Badge } from '@/components/ui/badge'
+import { Button } from '@/components/ui/button'
+import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
+import { Separator } from '@/components/ui/separator'
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
+
+# Teste de Componentes shadcn/ui
+
+Esta página valida que todos os componentes shadcn/ui estão funcionando corretamente com o tema neutro.
+
+## Alerts
+
+<Alert className="my-4">
+  <AlertTitle>🎯 Recomendação Estratégica</AlertTitle>
+  <AlertDescription>
+    Implementar 9 Quick Wins (P0) nas próximas 2 semanas para alcançar +50-80% conversão e -40-60% churn com mínimo esforço.
+  </AlertDescription>
+</Alert>
+
+## Cards
+
+<div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 my-6">
+  <Card>
+    <CardHeader>
+      <CardTitle className="text-2xl">31</CardTitle>
+      <CardDescription>Oportunidades Identificadas</CardDescription>
+    </CardHeader>
+  </Card>
+
+  <Card>
+    <CardHeader>
+      <CardTitle className="text-2xl">9</CardTitle>
+      <CardDescription>Quick Wins (P0)</CardDescription>
+    </CardHeader>
+    <CardContent className="flex gap-2">
+      <Badge variant="outline">Alto Impacto</Badge>
+      <Badge variant="outline">Baixo Esforço</Badge>
+    </CardContent>
+  </Card>
+
+  <Card>
+    <CardHeader>
+      <CardTitle className="text-2xl">+50-80%</CardTitle>
+      <CardDescription>Potencial de Conversão</CardDescription>
+    </CardHeader>
+  </Card>
+
+  <Card>
+    <CardHeader>
+      <CardTitle className="text-2xl">2-4 sem</CardTitle>
+      <CardDescription>Timeline P0</CardDescription>
+    </CardHeader>
+  </Card>
+</div>
+
+## Badges
+
+<div className="flex flex-wrap gap-2 my-4">
+  <Badge>Default</Badge>
+  <Badge variant="secondary">Secondary</Badge>
+  <Badge variant="outline">Outline</Badge>
+  <Badge variant="destructive">Destructive</Badge>
+  <Badge className="bg-green-100 text-green-800 hover:bg-green-200">Custom Green</Badge>
+  <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">Custom Blue</Badge>
+</div>
+
+## Buttons
+
+<div className="flex flex-wrap gap-2 my-4">
+  <Button>Default</Button>
+  <Button variant="secondary">Secondary</Button>
+  <Button variant="outline">Outline</Button>
+  <Button variant="ghost">Ghost</Button>
+  <Button variant="destructive">Destructive</Button>
+  <Button variant="link">Link</Button>
+</div>
+
+## Tabs
+
+<Tabs defaultValue="resumo" className="my-6">
+  <TabsList className="grid w-full grid-cols-3">
+    <TabsTrigger value="resumo">Resumo</TabsTrigger>
+    <TabsTrigger value="insights">Insights</TabsTrigger>
+    <TabsTrigger value="metricas">Métricas</TabsTrigger>
+  </TabsList>
+
+  <TabsContent value="resumo">
+    <Card>
+      <CardHeader>
+        <CardTitle>Resumo Executivo</CardTitle>
+        <CardDescription>Principais descobertas do research</CardDescription>
+      </CardHeader>
+      <CardContent>
+        <p className="text-sm text-muted-foreground">
+          Este é o conteúdo da aba de resumo. Aqui podemos colocar informações consolidadas sobre o projeto.
+        </p>
+      </CardContent>
+    </Card>
+  </TabsContent>
+
+  <TabsContent value="insights">
+    <Card>
+      <CardHeader>
+        <CardTitle>Principais Insights</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <ul className="list-disc list-inside text-sm space-y-2">
+          <li>68% das reclamações são sobre cobranças inesperadas</li>
+          <li>Falta de comparação clara com concorrentes</li>
+          <li>Necessidade de transparência em streamings</li>
+        </ul>
+      </CardContent>
+    </Card>
+  </TabsContent>
+
+  <TabsContent value="metricas">
+    <Card>
+      <CardHeader>
+        <CardTitle>Métricas de Acompanhamento</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <div className="grid gap-3 md:grid-cols-2">
+          <div>
+            <div className="text-xs text-muted-foreground">Taxa de conversão</div>
+            <div className="text-2xl font-bold">+15-20%</div>
+          </div>
+          <div>
+            <div className="text-xs text-muted-foreground">Redução de churn</div>
+            <div className="text-2xl font-bold">-40-60%</div>
+          </div>
+        </div>
+      </CardContent>
+    </Card>
+  </TabsContent>
+</Tabs>
+
+## Accordion
+
+<Accordion type="single" collapsible className="my-6">
+  <AccordionItem value="item-1">
+    <AccordionTrigger>
+      <div className="flex items-center gap-2">
+        <Badge>LP</Badge>
+        <Badge variant="outline" className="bg-green-100">Alto Impacto</Badge>
+        <span className="font-semibold">CTAs específicos por plano</span>
+      </div>
+    </AccordionTrigger>
+    <AccordionContent>
+      <Card>
+        <CardContent className="pt-4">
+          <p className="text-sm mb-4">
+            Substituir o botão genérico "Escolher plano" por CTAs distintos e específicos para cada tier.
+          </p>
+          <Separator className="my-4" />
+          <div>
+            <h4 className="font-semibold mb-2 text-sm">Por que Alto Impacto?</h4>
+            <p className="text-sm text-muted-foreground">
+              Resolve confusão cognitiva no momento crítico de conversão. CTAs específicos reduzem a carga mental do usuário.
+            </p>
+          </div>
+        </CardContent>
+      </Card>
+    </AccordionContent>
+  </AccordionItem>
+
+  <AccordionItem value="item-2">
+    <AccordionTrigger>
+      <div className="flex items-center gap-2">
+        <Badge>LP</Badge>
+        <Badge variant="outline" className="bg-green-100">Alto Impacto</Badge>
+        <span className="font-semibold">Calculadora de economia</span>
+      </div>
+    </AccordionTrigger>
+    <AccordionContent>
+      <Card>
+        <CardContent className="pt-4">
+          <p className="text-sm">
+            Ferramenta interativa que mostra ao usuário quanto ele economizará com o Meli+ baseado em seu padrão de compras.
+          </p>
+        </CardContent>
+      </Card>
+    </AccordionContent>
+  </AccordionItem>
+</Accordion>
+
+## Table
+
+<Table className="my-6">
+  <TableHeader>
+    <TableRow>
+      <TableHead>Feature</TableHead>
+      <TableHead>Amazon Prime</TableHead>
+      <TableHead>Rappi Prime</TableHead>
+      <TableHead>Meli+</TableHead>
+    </TableRow>
+  </TableHeader>
+  <TableBody>
+    <TableRow>
+      <TableCell className="font-medium">Frete Grátis</TableCell>
+      <TableCell>✅ Ilimitado</TableCell>
+      <TableCell>✅ Pedidos &gt;R$30</TableCell>
+      <TableCell>✅ &gt;R$29</TableCell>
+    </TableRow>
+    <TableRow>
+      <TableCell className="font-medium">Streaming Incluso</TableCell>
+      <TableCell>✅ Prime Video</TableCell>
+      <TableCell>❌</TableCell>
+      <TableCell>✅ Disney+/Star+</TableCell>
+    </TableRow>
+    <TableRow>
+      <TableCell className="font-medium">Preço/mês</TableCell>
+      <TableCell>R$ 19,90</TableCell>
+      <TableCell>R$ 24,90</TableCell>
+      <TableCell>R$ 17,99</TableCell>
+    </TableRow>
+  </TableBody>
+</Table>
+
+## Separator
+
+<div className="my-6">
+  <p className="text-sm">Conteúdo acima do separador</p>
+  <Separator className="my-4" />
+  <p className="text-sm">Conteúdo abaixo do separador</p>
+</div>
+
+## Card com Destaque
+
+<Card className="border-l-4 border-l-primary my-6">
+  <CardHeader>
+    <CardTitle>Card com Borda Colorida</CardTitle>
+    <CardDescription>Este estilo é usado para destacar informações importantes</CardDescription>
+  </CardHeader>
+  <CardContent>
+    <blockquote className="border-l-4 border-primary pl-4 italic text-sm">
+      "Assinei esperando Disney+ imediato, mas demorou 3 dias e ninguém avisou" - Review Reclame Aqui
+    </blockquote>
+  </CardContent>
+</Card>
+
+## Status do Tema
+
+<div className="my-6">
+  <Card>
+    <CardHeader>
+      <CardTitle>Validação do Tema shadcn/ui</CardTitle>
+    </CardHeader>
+    <CardContent className="space-y-4">
+      <div className="grid gap-4 md:grid-cols-2">
+        <div>
+          <h4 className="font-semibold text-sm mb-2">✅ Configurações</h4>
+          <ul className="text-xs space-y-1 text-muted-foreground">
+            <li>✓ Style: New York</li>
+            <li>✓ Base Color: Neutral (oklch neutro)</li>
+            <li>✓ CSS Variables: Habilitado</li>
+            <li>✓ Dark Mode: Suportado</li>
+            <li>✓ TypeScript: Habilitado</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="font-semibold text-sm mb-2">✅ Componentes Instalados</h4>
+          <ul className="text-xs space-y-1 text-muted-foreground">
+            <li>✓ Card, Badge, Button, Alert</li>
+            <li>✓ Tabs, Accordion, Table</li>
+            <li>✓ Separator, Dialog, Scroll Area</li>
+            <li>✓ Skeleton, Avatar, Progress</li>
+            <li>+ 15 outros componentes</li>
+          </ul>
+        </div>
+      </div>
+
+      <Separator />
+
+      <div>
+        <h4 className="font-semibold text-sm mb-2">🎨 Cores do Tema (OKLCH Neutro)</h4>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+          <div>
+            <div className="w-full h-12 rounded bg-primary mb-1"></div>
+            <p className="text-xs">Primary</p>
+          </div>
+          <div>
+            <div className="w-full h-12 rounded bg-secondary mb-1"></div>
+            <p className="text-xs">Secondary</p>
+          </div>
+          <div>
+            <div className="w-full h-12 rounded bg-muted mb-1"></div>
+            <p className="text-xs">Muted</p>
+          </div>
+          <div>
+            <div className="w-full h-12 rounded bg-accent mb-1"></div>
+            <p className="text-xs">Accent</p>
+          </div>
+        </div>
+      </div>
+    </CardContent>
+  </Card>
+</div>
