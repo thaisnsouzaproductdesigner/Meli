@@ -3,7 +3,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge'
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
 import { Separator } from '@/components/ui/separator'
-import { CheckCircle2, XCircle, TrendingUp, TrendingDown, AlertTriangle } from 'lucide-react'
 
 # Desk Research - Análise Completa
 
@@ -78,10 +77,7 @@ Análise consolidada baseada em desk research, análise competitiva e insights d
 <div className="grid gap-4 md:grid-cols-2 my-6">
   <Card id="card-dr-05" className="border-l-4 border-l-destructive">
     <CardHeader>
-      <div className="flex items-center gap-2">
-        <XCircle className="text-destructive" size={20} />
-        <CardTitle>Gestão de Pagamento</CardTitle>
-      </div>
+      <CardTitle>❌ Gestão de Pagamento</CardTitle>
     </CardHeader>
     <CardContent className="space-y-2 text-sm">
       <p><strong>Problema #1:</strong> Cobranças após cancelamento confirmado</p>
@@ -94,10 +90,7 @@ Análise consolidada baseada em desk research, análise competitiva e insights d
 
   <Card id="card-dr-06" className="border-l-4 border-l-destructive">
     <CardHeader>
-      <div className="flex items-center gap-2">
-        <XCircle className="text-destructive" size={20} />
-        <CardTitle>Experiência com Streaming</CardTitle>
-      </div>
+      <CardTitle>❌ Experiência com Streaming</CardTitle>
     </CardHeader>
     <CardContent className="space-y-2 text-sm">
       <p><strong>Problema #1:</strong> Falhas no login/ativação de serviços parceiros</p>
@@ -110,10 +103,7 @@ Análise consolidada baseada em desk research, análise competitiva e insights d
 
   <Card id="card-dr-07" className="border-l-4 border-l-orange-500">
     <CardHeader>
-      <div className="flex items-center gap-2">
-        <AlertTriangle className="text-orange-500" size={20} />
-        <CardTitle>Customer Support</CardTitle>
-      </div>
+      <CardTitle>⚠️ Customer Support</CardTitle>
     </CardHeader>
     <CardContent className="space-y-2 text-sm">
       <p><strong>Problema #1:</strong> Respostas genéricas que não resolvem</p>
@@ -126,10 +116,7 @@ Análise consolidada baseada em desk research, análise competitiva e insights d
 
   <Card id="card-dr-08" className="border-l-4 border-l-orange-500">
     <CardHeader>
-      <div className="flex items-center gap-2">
-        <AlertTriangle className="text-orange-500" size={20} />
-        <CardTitle>Entrega e Benefícios</CardTitle>
-      </div>
+      <CardTitle>⚠️ Entrega e Benefícios</CardTitle>
     </CardHeader>
     <CardContent className="space-y-2 text-sm">
       <p><strong>Problema #1:</strong> Atrasos apesar do Meli+ Fast</p>
@@ -300,9 +287,8 @@ A análise completa de benchmarks incluirá best practices globais e brasileiras
       <p><strong>Dado:</strong> 68% das reclamações são sobre cobranças inesperadas</p>
       <p><strong>Causa Raiz:</strong> Usuários não sabem quando serão cobrados nem quanto pagarão</p>
       <p><strong>Ação:</strong> Implementar notificações 7 dias antes da cobrança + dashboard de próximos pagamentos</p>
-      <div className="flex items-center gap-2 mt-3">
-        <TrendingUp className="text-green-600" size={16} />
-        <span className="text-xs"><strong>Impacto:</strong> -40-60% redução de reclamações de cobrança</span>
+      <div className="mt-3">
+        <span className="text-xs"><strong>📈 Impacto:</strong> -40-60% redução de reclamações de cobrança</span>
       </div>
     </CardContent>
   </Card>
@@ -318,9 +304,8 @@ A análise completa de benchmarks incluirá best practices globais e brasileiras
       <p><strong>Dado:</strong> Confusão entre preço promocional e preço regular gera chargebacks</p>
       <p><strong>Causa Raiz:</strong> Falta de clareza sobre quando termina a promoção e qual será o próximo valor</p>
       <p><strong>Ação:</strong> Mostrar timeline visual da promoção + próximo valor destacado no momento da assinatura</p>
-      <div className="flex items-center gap-2 mt-3">
-        <TrendingUp className="text-green-600" size={16} />
-        <span className="text-xs"><strong>Impacto:</strong> -30-50% redução de disputas e chargebacks</span>
+      <div className="mt-3">
+        <span className="text-xs"><strong>📈 Impacto:</strong> -30-50% redução de disputas e chargebacks</span>
       </div>
     </CardContent>
   </Card>
@@ -336,9 +321,8 @@ A análise completa de benchmarks incluirá best practices globais e brasileiras
       <p><strong>Dado:</strong> 15% das reclamações sobre falhas em ativar Disney+, HBO Max, Apple TV</p>
       <p><strong>Causa Raiz:</strong> Processo complexo + demora de 3+ dias + falta de instruções claras</p>
       <p><strong>Ação:</strong> Tutorial passo-a-passo in-app + ativação instantânea (API integration) + troubleshooting proativo</p>
-      <div className="flex items-center gap-2 mt-3">
-        <TrendingUp className="text-green-600" size={16} />
-        <span className="text-xs"><strong>Impacto:</strong> +80% taxa de ativação bem-sucedida no D1</span>
+      <div className="mt-3">
+        <span className="text-xs"><strong>📈 Impacto:</strong> +80% taxa de ativação bem-sucedida no D1</span>
       </div>
     </CardContent>
   </Card>
@@ -354,9 +338,8 @@ A análise completa de benchmarks incluirá best practices globais e brasileiras
       <p><strong>Dado:</strong> "Esperava imediato, mas demorou 3 dias" é reclamação recorrente</p>
       <p><strong>Causa Raiz:</strong> Landing page promete benefícios "agora" mas ativação leva dias</p>
       <p><strong>Ação:</strong> Ser transparente sobre timing de ativação + mostrar checklist de ativação + email de confirmação quando ativo</p>
-      <div className="flex items-center gap-2 mt-3">
-        <TrendingUp className="text-green-600" size={16} />
-        <span className="text-xs"><strong>Impacto:</strong> +60% satisfação NPS nos primeiros 7 dias</span>
+      <div className="mt-3">
+        <span className="text-xs"><strong>📈 Impacto:</strong> +60% satisfação NPS nos primeiros 7 dias</span>
       </div>
     </CardContent>
   </Card>
@@ -372,9 +355,8 @@ A análise completa de benchmarks incluirá best practices globais e brasileiras
       <p><strong>Dado:</strong> 5% das reclamações sobre impossibilidade de cancelar</p>
       <p><strong>Causa Raiz:</strong> Botão de cancelamento escondido + confirmação cancelada não chega</p>
       <p><strong>Ação:</strong> Cancelamento em 1 clique + email de confirmação imediato + pausa temporária como alternativa</p>
-      <div className="flex items-center gap-2 mt-3">
-        <TrendingUp className="text-green-600" size={16} />
-        <span className="text-xs"><strong>Impacto:</strong> -70% reclamações de cancelamento + melhor brand perception</span>
+      <div className="mt-3">
+        <span className="text-xs"><strong>📈 Impacto:</strong> -70% reclamações de cancelamento + melhor brand perception</span>
       </div>
     </CardContent>
   </Card>
@@ -390,9 +372,8 @@ A análise completa de benchmarks incluirá best practices globais e brasileiras
       <p><strong>Dado:</strong> "Me mandaram de setor em setor" agrava todos os problemas</p>
       <p><strong>Causa Raiz:</strong> Falta de ownership entre Mercado Livre e parceiros (streaming)</p>
       <p><strong>Ação:</strong> Time dedicado Meli+ com acesso a sistemas dos parceiros + SLA de resolução em 24h</p>
-      <div className="flex items-center gap-2 mt-3">
-        <TrendingUp className="text-green-600" size={16} />
-        <span className="text-xs"><strong>Impacto:</strong> +90% resolução no primeiro contato (FCR)</span>
+      <div className="mt-3">
+        <span className="text-xs"><strong>📈 Impacto:</strong> +90% resolução no primeiro contato (FCR)</span>
       </div>
     </CardContent>
   </Card>
@@ -408,9 +389,8 @@ A análise completa de benchmarks incluirá best practices globais e brasileiras
       <p><strong>Dado:</strong> Usuários não conseguem rastrear cobranças passadas</p>
       <p><strong>Causa Raiz:</strong> Falta de dashboard consolidado com histórico</p>
       <p><strong>Ação:</strong> Dashboard com histórico completo + download de faturas + filtros por período</p>
-      <div className="flex items-center gap-2 mt-3">
-        <TrendingUp className="text-green-600" size={16} />
-        <span className="text-xs"><strong>Impacto:</strong> -20% tickets de suporte sobre cobranças</span>
+      <div className="mt-3">
+        <span className="text-xs"><strong>📈 Impacto:</strong> -20% tickets de suporte sobre cobranças</span>
       </div>
     </CardContent>
   </Card>
@@ -426,9 +406,8 @@ A análise completa de benchmarks incluirá best practices globais e brasileiras
       <p><strong>Dado:</strong> Cobranças falham por cartão vencido sem aviso prévio</p>
       <p><strong>Causa Raiz:</strong> Falta de notificação proativa + dificuldade para atualizar método</p>
       <p><strong>Ação:</strong> Notificação 15 dias antes do vencimento do cartão + update em 2 cliques</p>
-      <div className="flex items-center gap-2 mt-3">
-        <TrendingUp className="text-green-600" size={16} />
-        <span className="text-xs"><strong>Impacto:</strong> -50% churn involuntário por falha de pagamento</span>
+      <div className="mt-3">
+        <span className="text-xs"><strong>📈 Impacto:</strong> -50% churn involuntário por falha de pagamento</span>
       </div>
     </CardContent>
   </Card>
@@ -444,9 +423,8 @@ A análise completa de benchmarks incluirá best practices globais e brasileiras
       <p><strong>Dado:</strong> Usuários não sabem como usar todos os benefícios</p>
       <p><strong>Causa Raiz:</strong> Ausência de educação pós-assinatura</p>
       <p><strong>Ação:</strong> Email drip campaign nos primeiros 30 dias + tooltips in-app + checklist de ativação</p>
-      <div className="flex items-center gap-2 mt-3">
-        <TrendingUp className="text-green-600" size={16} />
-        <span className="text-xs"><strong>Impacto:</strong> +40% feature adoption + +25% perceived value</span>
+      <div className="mt-3">
+        <span className="text-xs"><strong>📈 Impacto:</strong> +40% feature adoption + +25% perceived value</span>
       </div>
     </CardContent>
   </Card>
@@ -462,9 +440,8 @@ A análise completa de benchmarks incluirá best practices globais e brasileiras
       <p><strong>Dado:</strong> Usuários não entendem quanto estão economizando com Meli+</p>
       <p><strong>Causa Raiz:</strong> Falta de visualização clara do ROI da assinatura</p>
       <p><strong>Ação:</strong> Dashboard mostrando economia mensal em frete + cashback acumulado + comparativo com não-assinantes</p>
-      <div className="flex items-center gap-2 mt-3">
-        <TrendingUp className="text-green-600" size={16} />
-        <span className="text-xs"><strong>Impacto:</strong> +35% retenção ao mostrar valor tangível</span>
+      <div className="mt-3">
+        <span className="text-xs"><strong>📈 Impacto:</strong> +35% retenção ao mostrar valor tangível</span>
       </div>
     </CardContent>
   </Card>
@@ -480,9 +457,8 @@ A análise completa de benchmarks incluirá best practices globais e brasileiras
       <p><strong>Dado:</strong> 2% das reclamações sobre suspensões sem notificação</p>
       <p><strong>Causa Raiz:</strong> Sistema anti-fraude suspende sem comunicação ao usuário</p>
       <p><strong>Ação:</strong> Email/SMS imediato quando conta é suspensa + razão clara + caminho para resolução</p>
-      <div className="flex items-center gap-2 mt-3">
-        <TrendingUp className="text-green-600" size={16} />
-        <span className="text-xs"><strong>Impacto:</strong> -80% escalações + melhor brand trust</span>
+      <div className="mt-3">
+        <span className="text-xs"><strong>📈 Impacto:</strong> -80% escalações + melhor brand trust</span>
       </div>
     </CardContent>
   </Card>
@@ -498,9 +474,8 @@ A análise completa de benchmarks incluirá best practices globais e brasileiras
       <p><strong>Dado:</strong> Usuários comparam com Amazon Prime e Rappi Prime antes de assinar</p>
       <p><strong>Causa Raiz:</strong> Falta de tabela comparativa lado-a-lado na landing page</p>
       <p><strong>Ação:</strong> Tabela comparativa com 3-5 concorrentes + highlighting de diferenciais do Meli+</p>
-      <div className="flex items-center gap-2 mt-3">
-        <TrendingUp className="text-green-600" size={16} />
-        <span className="text-xs"><strong>Impacto:</strong> +50-80% conversão ao mostrar valor único</span>
+      <div className="mt-3">
+        <span className="text-xs"><strong>📈 Impacto:</strong> +50-80% conversão ao mostrar valor único</span>
       </div>
     </CardContent>
   </Card>
