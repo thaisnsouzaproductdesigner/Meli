@@ -1,19 +1,116 @@
-# Meli+ Product Design
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Badge } from '@/components/ui/badge'
+import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
 
-Bem-vindo à documentação do projeto Meli+.
+# Meli+ Product Design Documentation
 
-## Sobre o Projeto
+Documentação completa do redesign de Landing Page e Gestão de Pagamento do programa de assinatura Meli+ do Mercado Livre.
 
-Este é um projeto de redesign da Landing Page e Gestão de Pagamento do Meli+.
+<Alert id="alert-index-01" className="my-6">
+  <AlertTitle>🎯 Recomendação Estratégica</AlertTitle>
+  <AlertDescription>
+    Implementar 9 Quick Wins (P0) nas próximas 2-4 semanas para alcançar +50-80% conversão e -40-60% churn com mínimo esforço.
+  </AlertDescription>
+</Alert>
 
-## Conteúdo
+## 📊 Números-Chave do Projeto
 
-Use o menu lateral para navegar pelas seções:
+<div id="section-index-01" className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 my-6">
+  <Card id="card-index-01">
+    <CardHeader>
+      <CardTitle className="text-2xl">31</CardTitle>
+      <CardDescription>Oportunidades Identificadas</CardDescription>
+    </CardHeader>
+  </Card>
 
-- **Primeiros Passos** - Guia de introdução
-- **UI Kit** - Sistema de design
-- **Teste de Componentes** - Validação de componentes
+  <Card id="card-index-02">
+    <CardHeader>
+      <CardTitle className="text-2xl">9</CardTitle>
+      <CardDescription>Quick Wins (P0)</CardDescription>
+    </CardHeader>
+    <CardContent className="flex gap-2 flex-wrap">
+      <Badge variant="outline">Alto Impacto</Badge>
+      <Badge variant="outline">Baixo Esforço</Badge>
+    </CardContent>
+  </Card>
+
+  <Card id="card-index-03">
+    <CardHeader>
+      <CardTitle className="text-2xl">+50-80%</CardTitle>
+      <CardDescription>Potencial de Conversão</CardDescription>
+    </CardHeader>
+  </Card>
+
+  <Card id="card-index-04">
+    <CardHeader>
+      <CardTitle className="text-2xl">2-4 sem</CardTitle>
+      <CardDescription>Timeline P0</CardDescription>
+    </CardHeader>
+  </Card>
+</div>
+
+## 🎯 Sobre o Projeto
+
+Este projeto consolida:
+
+- **Research Findings:** Desk research, análise competitiva e insights do Reclame Aqui
+- **Matriz de Priorização:** Framework Impacto × Esforço para decisão estratégica
+- **Oportunidades:** 31 melhorias catalogadas com racional detalhado
+- **UI Kit:** Sistema de design com shadcn/ui (tema neutro)
+- **Roadmap:** Timeline de implementação
+
+## 🚀 Principais Insights
+
+<div id="section-index-02" className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+  <Card id="card-index-05">
+    <CardContent className="pt-6">
+      <h3 className="text-lg font-semibold mb-3">🎯 Landing Page</h3>
+      <ul className="space-y-2 text-sm text-muted-foreground">
+        <li><strong className="text-foreground">Problema:</strong> Falta de comparação clara com concorrentes</li>
+        <li><strong className="text-foreground">Impacto:</strong> Usuários não entendem a proposta de valor</li>
+        <li><strong className="text-foreground">Solução:</strong> Tabela comparativa + calculadora de economia</li>
+      </ul>
+    </CardContent>
+  </Card>
+
+  <Card id="card-index-06">
+    <CardContent className="pt-6">
+      <h3 className="text-lg font-semibold mb-3">💳 Gestão de Pagamento</h3>
+      <ul className="space-y-2 text-sm text-muted-foreground">
+        <li><strong className="text-foreground">Problema:</strong> 68% das reclamações sobre cobranças inesperadas</li>
+        <li><strong className="text-foreground">Impacto:</strong> Alto índice de churn e insatisfação</li>
+        <li><strong className="text-foreground">Solução:</strong> Transparência total + notificações proativas</li>
+      </ul>
+    </CardContent>
+  </Card>
+</div>
+
+## 🛠️ Tecnologias
+
+- **Nextra** - Framework de documentação Next.js
+- **shadcn/ui** - Componentes acessíveis e neutros
+- **Tailwind CSS** - Estilização utilitária
+- **TypeScript** - Type safety
+- **Recharts** - Visualização de dados
+- **Lucide Icons** - Ícones modernos
+
+## 📚 Navegação
+
+Use o menu lateral para explorar:
+
+- **Primeiros Passos** - Guia completo e setup
+- **UI Kit** - Sistema de design e componentes
+- **Teste de Componentes** - Validação de todos os componentes shadcn/ui
 
 ---
 
-**Próximos passos:** Explore as seções no menu lateral.
+**Mapa de IDs desta página:**
+- `alert-index-01` - Recomendação estratégica
+- `section-index-01` - Grid de números-chave
+- `card-index-01` - Card "31 Oportunidades"
+- `card-index-02` - Card "9 Quick Wins"
+- `card-index-03` - Card "+50-80% Conversão"
+- `card-index-04` - Card "2-4 sem Timeline"
+- `section-index-02` - Grid de insights principais
+- `card-index-05` - Card Landing Page
+- `card-index-06` - Card Gestão de Pagamento
