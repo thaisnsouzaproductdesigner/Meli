@@ -1,8 +1,14 @@
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Badge } from '@/components/ui/badge'
+import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
+
 # Primeiros Passos
 
 Bem-vindo à documentação do redesign Meli+! Este guia vai te ajudar a navegar e entender toda a pesquisa e oportunidades identificadas.
 
 ## 🚀 Como Usar Esta Documentação
+
+<div id="section-gs-01">
 
 ### Navegação
 - Use a **barra lateral** para explorar as seções
@@ -29,21 +35,44 @@ Guia de navegação e instruções para desenvolvedores.
 #### 4. Teste de Componentes
 Showcase de todos os componentes shadcn/ui instalados com exemplos interativos.
 
+</div>
+
 ## 📊 Principais Descobertas
 
-### Landing Page
-- **Problema:** Falta de comparação clara com concorrentes
-- **Solução:** Tabela comparativa + calculadora de economia
-- **Impacto:** +50-80% potencial de conversão
+<div id="section-gs-02" className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+  <Card id="card-gs-01">
+    <CardHeader>
+      <CardTitle>🎯 Landing Page</CardTitle>
+    </CardHeader>
+    <CardContent className="space-y-2 text-sm">
+      <p><strong>Problema:</strong> Falta de comparação clara com concorrentes</p>
+      <p><strong>Solução:</strong> Tabela comparativa + calculadora de economia</p>
+      <p><strong>Impacto:</strong> +50-80% potencial de conversão</p>
+    </CardContent>
+  </Card>
 
-### Gestão de Pagamento
-- **Problema:** 68% das reclamações sobre cobranças inesperadas
-- **Solução:** Transparência total + notificações proativas
-- **Impacto:** -40-60% redução de churn
+  <Card id="card-gs-02">
+    <CardHeader>
+      <CardTitle>💳 Gestão de Pagamento</CardTitle>
+    </CardHeader>
+    <CardContent className="space-y-2 text-sm">
+      <p><strong>Problema:</strong> 68% das reclamações sobre cobranças inesperadas</p>
+      <p><strong>Solução:</strong> Transparência total + notificações proativas</p>
+      <p><strong>Impacto:</strong> -40-60% redução de churn</p>
+    </CardContent>
+  </Card>
+</div>
 
 ## 🎯 Quick Wins (Prioridade P0)
 
-As **9 oportunidades** de alto impacto e baixo esforço:
+<Alert id="alert-gs-01" className="my-6">
+  <AlertTitle>9 Oportunidades de Alto Impacto e Baixo Esforço</AlertTitle>
+  <AlertDescription>
+    Estas são as melhorias que devem ser implementadas primeiro para maximizar resultados com mínimo esforço.
+  </AlertDescription>
+</Alert>
+
+<div id="section-gs-03" className="my-6">
 
 1. **CTAs específicos por plano** - Substituir botões genéricos
 2. **Calculadora de economia** - Mostrar valor personalizado
@@ -55,7 +84,11 @@ As **9 oportunidades** de alto impacto e baixo esforço:
 8. **Suporte contextual** - Ajuda no momento certo
 9. **Gestão de pagamento** - Atualizar métodos facilmente
 
+</div>
+
 ## 💻 Para Desenvolvedores
+
+<div id="section-gs-04">
 
 ### Executando Localmente
 
@@ -65,7 +98,7 @@ git clone https://github.com/thaisnsouzaproductdesigner/Meli.git
 cd Meli
 
 # Checkout da branch limpa
-git checkout docs/fresh-clean-start
+git checkout claude/fresh-clean-start-MrnNY
 
 # Instale as dependências
 npm install
@@ -76,15 +109,39 @@ npm run dev
 
 O projeto abrirá em **http://localhost:3000**
 
+</div>
+
+<div id="section-gs-05" className="my-6">
+
 ### Tech Stack
 
-- **Next.js 14+** - Framework React
-- **Nextra 3.3** - Documentação estática
-- **shadcn/ui** - Componentes acessíveis (tema neutro)
-- **Tailwind CSS 4.0** - Estilização
-- **TypeScript** - Type safety
-- **Lucide React** - Ícones
-- **Recharts** - Gráficos (futuro)
+<div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
+  <Card id="card-gs-03">
+    <CardHeader>
+      <CardTitle className="text-lg">Frontend</CardTitle>
+    </CardHeader>
+    <CardContent className="space-y-1 text-sm">
+      <p>• <strong>Next.js 14+</strong> - Framework React</p>
+      <p>• <strong>Nextra 3.3</strong> - Documentação estática</p>
+      <p>• <strong>TypeScript</strong> - Type safety</p>
+    </CardContent>
+  </Card>
+
+  <Card id="card-gs-04">
+    <CardHeader>
+      <CardTitle className="text-lg">UI & Design</CardTitle>
+    </CardHeader>
+    <CardContent className="space-y-1 text-sm">
+      <p>• <strong>shadcn/ui</strong> - Componentes acessíveis</p>
+      <p>• <strong>Tailwind CSS 4.0</strong> - Estilização</p>
+      <p>• <strong>Lucide React</strong> - Ícones</p>
+    </CardContent>
+  </Card>
+</div>
+
+</div>
+
+<div id="section-gs-06">
 
 ### Comandos Úteis
 
@@ -102,14 +159,30 @@ npm start
 npm run lint
 ```
 
+</div>
+
 ## 🎨 Sistema de Design
 
-O projeto usa **shadcn/ui** com tema **neutral** (tons de cinza achromáticos):
+<Card id="card-gs-05" className="my-6">
+  <CardHeader>
+    <CardTitle>shadcn/ui com tema Neutral</CardTitle>
+    <CardDescription>Tons de cinza achromáticos para interface profissional</CardDescription>
+  </CardHeader>
+  <CardContent className="space-y-2">
+    <div className="grid grid-cols-2 gap-4 text-sm">
+      <div>
+        <p><strong>Estilo:</strong> New York (minimalista)</p>
+        <p><strong>Cores:</strong> Neutral (OKLCH)</p>
+      </div>
+      <div>
+        <p><strong>Dark Mode:</strong> Suportado nativamente</p>
+        <p><strong>Acessibilidade:</strong> WCAG AA mínimo</p>
+      </div>
+    </div>
+  </CardContent>
+</Card>
 
-- **Estilo:** New York (minimalista)
-- **Cores:** Neutral (OKLCH)
-- **Dark Mode:** Suportado nativamente
-- **Acessibilidade:** WCAG AA mínimo
+<div id="section-gs-07">
 
 ### Componentes Disponíveis
 
@@ -121,7 +194,11 @@ O projeto usa **shadcn/ui** com tema **neutral** (tons de cinza achromáticos):
 
 Veja todos em ação na página [Teste de Componentes](/test-components).
 
+</div>
+
 ## 📚 Próximos Passos
+
+<div id="section-gs-08" className="my-6">
 
 1. Explore o [UI Kit](/ui-kit) para entender o design system
 2. Veja os [Componentes em ação](/test-components)
@@ -129,7 +206,11 @@ Veja todos em ação na página [Teste de Componentes](/test-components).
 4. (Em breve) Matriz de Priorização interativa
 5. (Em breve) Roadmap de implementação
 
+</div>
+
 ## 🤝 Contribuindo
+
+<div id="section-gs-09">
 
 Este é um projeto de documentação. Para adicionar conteúdo:
 
@@ -139,8 +220,34 @@ Este é um projeto de documentação. Para adicionar conteúdo:
 4. Teste com `npm run dev`
 5. Faça commit e push
 
+</div>
+
 ## 📞 Suporte
+
+<div id="section-gs-10">
 
 - **GitHub:** [thaisnsouzaproductdesigner/Meli](https://github.com/thaisnsouzaproductdesigner/Meli)
 - **Nextra Docs:** [nextra.site](https://nextra.site)
 - **shadcn/ui:** [ui.shadcn.com](https://ui.shadcn.com)
+
+</div>
+
+---
+
+**Mapa de IDs desta página:**
+- `section-gs-01` - Como usar esta documentação
+- `section-gs-02` - Grid de principais descobertas
+- `card-gs-01` - Card Landing Page
+- `card-gs-02` - Card Gestão de Pagamento
+- `alert-gs-01` - Alerta Quick Wins
+- `section-gs-03` - Lista de 9 Quick Wins
+- `section-gs-04` - Executando localmente
+- `section-gs-05` - Tech Stack com cards
+- `card-gs-03` - Card Frontend
+- `card-gs-04` - Card UI & Design
+- `section-gs-06` - Comandos úteis
+- `card-gs-05` - Card Sistema de Design
+- `section-gs-07` - Componentes disponíveis
+- `section-gs-08` - Próximos passos
+- `section-gs-09` - Contribuindo
+- `section-gs-10` - Suporte

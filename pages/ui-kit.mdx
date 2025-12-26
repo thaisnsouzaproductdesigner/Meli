@@ -8,6 +8,8 @@ Sistema de design completo usando **shadcn/ui** com tema neutro e profissional.
 
 ## 🎨 Filosofia de Design
 
+<div id="section-ui-01">
+
 ### Princípios
 
 1. **Neutralidade** - Paleta acromática (tons de cinza)
@@ -16,14 +18,18 @@ Sistema de design completo usando **shadcn/ui** com tema neutro e profissional.
 4. **Performance** - CSS variables, sem runtime CSS-in-JS
 5. **Flexibilidade** - Dark mode nativo
 
+</div>
+
 ## 🌈 Paleta de Cores
+
+<div id="section-ui-02">
 
 O projeto usa o tema **Neutral** do shadcn/ui com cores em formato **HSL**.
 
 ### Cores Principais
 
 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-6">
-  <Card>
+  <Card id="card-ui-01">
     <CardHeader>
       <div className="w-full h-20 rounded bg-primary mb-2"></div>
       <CardTitle className="text-sm">Primary</CardTitle>
@@ -31,7 +37,7 @@ O projeto usa o tema **Neutral** do shadcn/ui com cores em formato **HSL**.
     </CardHeader>
   </Card>
 
-  <Card>
+  <Card id="card-ui-02">
     <CardHeader>
       <div className="w-full h-20 rounded bg-secondary mb-2"></div>
       <CardTitle className="text-sm">Secondary</CardTitle>
@@ -39,7 +45,7 @@ O projeto usa o tema **Neutral** do shadcn/ui com cores em formato **HSL**.
     </CardHeader>
   </Card>
 
-  <Card>
+  <Card id="card-ui-03">
     <CardHeader>
       <div className="w-full h-20 rounded bg-muted mb-2"></div>
       <CardTitle className="text-sm">Muted</CardTitle>
@@ -47,7 +53,7 @@ O projeto usa o tema **Neutral** do shadcn/ui com cores em formato **HSL**.
     </CardHeader>
   </Card>
 
-  <Card>
+  <Card id="card-ui-04">
     <CardHeader>
       <div className="w-full h-20 rounded bg-accent mb-2"></div>
       <CardTitle className="text-sm">Accent</CardTitle>
@@ -59,7 +65,7 @@ O projeto usa o tema **Neutral** do shadcn/ui com cores em formato **HSL**.
 ### Cores Semânticas
 
 <div className="grid grid-cols-2 md:grid-cols-3 gap-4 my-6">
-  <Card>
+  <Card id="card-ui-05">
     <CardHeader>
       <div className="w-full h-16 rounded bg-destructive mb-2"></div>
       <CardTitle className="text-sm">Destructive</CardTitle>
@@ -67,7 +73,7 @@ O projeto usa o tema **Neutral** do shadcn/ui com cores em formato **HSL**.
     </CardHeader>
   </Card>
 
-  <Card>
+  <Card id="card-ui-06">
     <CardHeader>
       <div className="w-full h-16 rounded border bg-background mb-2"></div>
       <CardTitle className="text-sm">Background</CardTitle>
@@ -75,7 +81,7 @@ O projeto usa o tema **Neutral** do shadcn/ui com cores em formato **HSL**.
     </CardHeader>
   </Card>
 
-  <Card>
+  <Card id="card-ui-07">
     <CardHeader>
       <div className="w-full h-16 rounded border bg-card mb-2"></div>
       <CardTitle className="text-sm">Card</CardTitle>
@@ -84,7 +90,11 @@ O projeto usa o tema **Neutral** do shadcn/ui com cores em formato **HSL**.
   </Card>
 </div>
 
+</div>
+
 ## 📝 Tipografia
+
+<div id="section-ui-03">
 
 O projeto usa fonte system nativa para melhor performance.
 
@@ -127,11 +137,15 @@ O projeto usa fonte system nativa para melhor performance.
   </div>
 </div>
 
+</div>
+
 ## 🧩 Componentes
+
+<div id="section-ui-04">
 
 ### Badges
 
-<div className="flex flex-wrap gap-2 my-6">
+<div id="badges-ui-01" className="flex flex-wrap gap-2 my-6">
   <Badge>Default</Badge>
   <Badge variant="secondary">Secondary</Badge>
   <Badge variant="outline">Outline</Badge>
@@ -147,9 +161,13 @@ import { Badge } from '@/components/ui/badge'
 <Badge variant="destructive">Destructive</Badge>
 ```
 
+</div>
+
+<div id="section-ui-05">
+
 ### Buttons
 
-<div className="flex flex-wrap gap-2 my-6">
+<div id="buttons-ui-01" className="flex flex-wrap gap-2 my-6">
   <Button>Default</Button>
   <Button variant="secondary">Secondary</Button>
   <Button variant="outline">Outline</Button>
@@ -169,10 +187,14 @@ import { Button } from '@/components/ui/button'
 <Button variant="link">Link</Button>
 ```
 
+</div>
+
+<div id="section-ui-06">
+
 ### Cards
 
 <div className="grid gap-4 md:grid-cols-2 my-6">
-  <Card>
+  <Card id="card-ui-08">
     <CardHeader>
       <CardTitle>Card Padrão</CardTitle>
       <CardDescription>Descrição do card</CardDescription>
@@ -182,7 +204,7 @@ import { Button } from '@/components/ui/button'
     </CardContent>
   </Card>
 
-  <Card className="border-l-4 border-l-primary">
+  <Card id="card-ui-09" className="border-l-4 border-l-primary">
     <CardHeader>
       <CardTitle>Card com Destaque</CardTitle>
       <CardDescription>Borda colorida à esquerda</CardDescription>
@@ -217,7 +239,11 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 </Card>
 ```
 
+</div>
+
 ## 📐 Espaçamento
+
+<div id="section-ui-07">
 
 O projeto usa a escala de espaçamento do Tailwind:
 
@@ -228,7 +254,11 @@ O projeto usa a escala de espaçamento do Tailwind:
 - **xl:** `2rem` (32px)
 - **2xl:** `3rem` (48px)
 
+</div>
+
 ## 🔲 Border Radius
+
+<div id="section-ui-08">
 
 - **Padrão:** `0.5rem` (8px)
 - **sm:** `0.375rem` (6px)
@@ -237,7 +267,11 @@ O projeto usa a escala de espaçamento do Tailwind:
 - **xl:** `1rem` (16px)
 - **full:** `9999px` (circular)
 
+</div>
+
 ## 🌗 Dark Mode
+
+<div id="section-ui-09">
 
 O tema suporta dark mode nativamente. As cores se ajustam automaticamente:
 
@@ -247,7 +281,11 @@ O tema suporta dark mode nativamente. As cores se ajustam automaticamente:
 
 Use o toggle no topo da página para alternar.
 
+</div>
+
 ## 📦 Componentes Instalados
+
+<div id="section-ui-10">
 
 ✅ **Disponíveis:**
 - Card
@@ -266,7 +304,11 @@ Use o toggle no topo da página para alternar.
 
 Veja todos em ação na página [Teste de Componentes](/test-components).
 
+</div>
+
 ## 🎯 Guidelines de Uso
+
+<div id="section-ui-11">
 
 ### DO ✅
 
@@ -284,9 +326,42 @@ Veja todos em ação na página [Teste de Componentes](/test-components).
 - Não use bibliotecas de UI externas
 - Não adicione animações excessivas
 
+</div>
+
 ## 📚 Recursos
+
+<div id="section-ui-12">
 
 - [shadcn/ui Components](https://ui.shadcn.com)
 - [Tailwind CSS Docs](https://tailwindcss.com)
 - [Radix UI](https://radix-ui.com)
 - [Lucide Icons](https://lucide.dev)
+
+</div>
+
+---
+
+**Mapa de IDs desta página:**
+- `section-ui-01` - Filosofia de Design / Princípios
+- `section-ui-02` - Paleta de Cores completa
+- `card-ui-01` - Card cor Primary
+- `card-ui-02` - Card cor Secondary
+- `card-ui-03` - Card cor Muted
+- `card-ui-04` - Card cor Accent
+- `card-ui-05` - Card cor Destructive
+- `card-ui-06` - Card cor Background
+- `card-ui-07` - Card cor Card
+- `section-ui-03` - Tipografia e Hierarquia
+- `section-ui-04` - Componente Badges
+- `badges-ui-01` - Exemplos de Badges
+- `section-ui-05` - Componente Buttons
+- `buttons-ui-01` - Exemplos de Buttons
+- `section-ui-06` - Componente Cards
+- `card-ui-08` - Card Padrão (exemplo)
+- `card-ui-09` - Card com Destaque (exemplo)
+- `section-ui-07` - Espaçamento
+- `section-ui-08` - Border Radius
+- `section-ui-09` - Dark Mode
+- `section-ui-10` - Componentes Instalados
+- `section-ui-11` - Guidelines de Uso
+- `section-ui-12` - Recursos
